@@ -1,19 +1,23 @@
 // src/app.ts
 
-import dotenv from 'dotenv'
-dotenv.config()
+import dotenv from "dotenv";
+dotenv.config();
+import cors from "cors";
 
-import express from 'express'
-import { router } from './routes'
+import express from "express";
+import { router } from "./routes";
 
-const app = express()
+const app = express();
 
-app.use(express.json())
+// Habilita o CORS para todas as origens
+app.use(cors());
 
-app.use(router)
+app.use(express.json());
 
-const PORT = process.env.PORT || 3333
+app.use(router);
+
+const PORT = process.env.PORT || 3333;
 
 app.listen(PORT, () => {
-    console.log('Servidor rodando!')
-})
+  console.log("Servidor rodando!");
+});
