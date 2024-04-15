@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/app.ts"
+    "dev": "ts-node-dev --transpile-only --ignore-watch node_modules src/app.ts",
+    "vercel-build": "npx sequelize-cli db:migrate deploy"
   },
   "keywords": [],
   "author": "",
