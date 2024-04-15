@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/app.ts",
   "scripts": {
-    "dev": "nodemon --watch src --exec ts-node src/app.ts",
+    "dev": "nodemon src/app.ts",
     "migrate": "npx sequelize-cli db:migrate",
     "vercel-build": "npm run migrate"
   },
