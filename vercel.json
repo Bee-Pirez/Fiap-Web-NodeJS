@@ -1,11 +1,5 @@
 {
   "devCommand": "npm run dev",
-  "builds": [
-    {
-      "src": "src/app.ts",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
