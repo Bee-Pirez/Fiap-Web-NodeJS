@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "devCommand": "npm run dev",
   "builds": [
     {
       "src": "src/app.ts",

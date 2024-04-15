@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon --watch src --exec ts-node src/app.ts",
     "migrate": "npx sequelize-cli db:migrate",
-    "vercel-build": "npm run migrate && npm run build"
+    "vercel-build": "npm run migrate"
   },
   "keywords": [],
   "author": "",
