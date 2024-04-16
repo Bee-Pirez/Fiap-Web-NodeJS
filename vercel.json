@@ -1,5 +1,6 @@
 {
   "version": 2,
+  "devCommand": "npm run dev",
   "builds": [
     {
       "src": "src/app.ts",
@@ -9,8 +10,7 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "src/app.ts",
-      "methods": ["GET", "POST", "PATCH", "DELETE", "OPTIONS"]
+      "dest": "src/app.ts"
     }
   ]
 }
