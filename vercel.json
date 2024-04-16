@@ -1,16 +1,16 @@
 {
   "version": 2,
+  "devCommand": "npm run dev",
   "builds": [
-      {
-          "src": "src/app.ts",
-          "use": "@vercel/node"
-      }
+    {
+      "src": "src/routes.ts",
+      "use": "@vercel/node"
+    }
   ],
   "routes": [
-      {
-          "src": "/(.*)",
-          "dest": "/",
-          "methods": ["GET", "POST", "PATCH", "DELETE", "OPTIONS"]
-      }
+    {
+      "src": "/(.*)",
+      "dest": "src/app.ts"
+    }
   ]
 }
